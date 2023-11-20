@@ -40,6 +40,7 @@ public class App {
 
             while (true) {
                 input = scan.nextByte();
+                scan.nextLine(); //clear the buffer before the next input
                 if (input > 0 && input < 10) {
                     if (box[input - 1] == 'X' || box[input - 1] == 'O')
                         System.out.println("That one is already in use. Enter another.");
@@ -73,7 +74,7 @@ public class App {
             }
 
             while (true) {
-                rand = (byte) (Math.random() * (9 - 1 + 1) + 1);
+                    rand = (byte) (Math.random() * (9 - 1 + 1) + 1);
                 if (box[rand - 1] != 'X' && box[rand - 1] != 'O') {
                     box[rand - 1] = 'O';
                     break;
