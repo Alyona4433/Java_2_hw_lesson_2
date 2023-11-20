@@ -1,3 +1,5 @@
+package com.devision;
+
 import java.util.Scanner;
 
 public class App {
